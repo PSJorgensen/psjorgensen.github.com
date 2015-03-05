@@ -1,3 +1,9 @@
+---
+layout: post
+category : national-consumption-structure
+tagline: "A beginning"
+tags : [structure, national consumption]
+---
 {% include JB/setup %}
 
     # READING IN DATA
