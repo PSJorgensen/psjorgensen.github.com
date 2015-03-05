@@ -1,0 +1,28 @@
+---
+title: "2015-03-05-structure-of-national-consumption"
+author: "Peter Søgaard Jørgensen"
+date: "Thursday, March 05, 2015"
+---
+---
+layout: post
+category : national-consumption-structure
+tagline: "A beginning"
+tags : [structure, national consumption]
+---
+{% include JB/setup %}
+
+
+```{r, echo=TRUE}
+# READING IN DATA
+## SETTING DIRECTORY FOR EORA DATA ON LOCAL HARD DRIVE
+wd<-"G:/Documents/PostDocKVA/Data/Eora" ### data directory
+setwd(wd)
+dir()
+## READING IN MATERIAL USE DATA
+wd<-"G:/Documents/PostDocKVA/Data/Eora" ### data directory
+setwd(wd)
+dir()
+energy.df<-read.csv("TradeBalance_I-ENERGY.csv",header=TRUE)
+head(energy.df)
+```
+
