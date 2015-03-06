@@ -354,7 +354,12 @@ ggplot(energy.df,aes(y=Consum.pop.int.scale,x=y,group=CountryA3)) + geom_line()<
 <p>Again, 1991 is abnormal compared to the years immediately before and after it. It also looks like very few countries have population data for 2011.</p>
 </blockquote>
 <blockquote>
-<p>For now, and to avoid the abormal fluctuations in the consumption intensities in 1991 and 2000, I will remove 1991 and 2000 from the dataset. I will also remove 2011. &gt; I will defnitely need to return to these two years to better understand how energy consumption relates to the size of population and economy in these years.</p>
+<p>For now, and to avoid the abormal fluctuations in the consumption intensities in 1991 and 2000, I will remove 1991 and 2000 from the dataset. I will also remove 2011.</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>I will defnitely need to return to these two years to better understand how energy consumption relates to the size of population and economy in these years.</p>
+</blockquote>
 </blockquote>
 <pre class="r"><code>energy.df&lt;-energy.df[-which( energy.df[,&quot;y&quot;] %in% c(1991,2000,2011)),]
 
@@ -365,9 +370,10 @@ ggplot(energy.df,aes(y=Consum.pop.int.scale,x=y)) + geom_line(aes(group=CountryA
 <blockquote>
 <p>To summarize the overall pattern in the intensity of consumption in relatio to GDP and population. There looks to be a rather monotomous decline in energy/GDP from 1970 to 2010. In contrast energy/population undergoes a general decrease from 1970 to the mid 1990’s whereafter some countries start to increase again.</p>
 </blockquote>
-<div id="i-will-continue-exploring-the-relative-contribution-of-domestic-extraction-and-imports-to-energy-consumption-in-the-next-notebook-entry." class="section level2">
-<h2>&gt; I will continue exploring the relative contribution of domestic extraction and imports to energy consumption in the next notebook entry.</h2>
-</div>
+<blockquote>
+<p>I will continue exploring the relative contribution of domestic extraction and imports to energy consumption in the next notebook entry.</p>
+</blockquote>
+<hr />
 </div>
 
 
